@@ -1,4 +1,5 @@
 .vrac {
+    content: "X";
     background-color: #000;
     color: #fff;
     border: 2px solid #fff;
@@ -12,13 +13,12 @@
     right: 0;
     bottom: 0;
     max-width: 2rem;
-    padding: 2rem;
+    padding: 1rem;
     margin: auto;
     font-family: sans-serif;
     line-height: 2rem;
     text-align: center;
     cursor: pointer;
-    content: "X";
 }
 
 .overlay {
@@ -39,8 +39,11 @@
     /* Black background with opacity */
     background-color: rgba(0, 0, 0, 0.9);
     /* Add a pointer on hover */
+    cursor: pointer;
     /* Use a grid for easy centering */
+    display: grid;
     /* Center vertically and horizontally */
+    place-content: center;
 }
 
 .overlay::after {
