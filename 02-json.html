@@ -11,6 +11,12 @@
 <body>
     <h1>Jason</h1>
     <ul x-data="{
+        async données() {
+            const resp await fetch('data.json');
+            return await resp.json();
+        },
+    }">
+    <ul x-data="{
         données : [
             {
                 nom: 'Jean',
